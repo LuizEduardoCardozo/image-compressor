@@ -23,6 +23,11 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@decorators/express@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@decorators/express/-/express-2.5.0.tgz#51f88bebdcf2bea450e929282ea2d8da6e7c03e8"
+  integrity sha512-E6Wm8ZcUpaz5DxNhkTuSKsjPPjUUGj9dG/mPMx5a8EIvLAR5mlkkK26DmRa+qxRh9+BaFZdZJC94kQaUyhtjPQ==
+
 "@eslint/eslintrc@^0.4.1":
   version "0.4.1"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-0.4.1.tgz"
