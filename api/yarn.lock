@@ -23,6 +23,13 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@decorators/di@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@decorators/di/-/di-1.0.3.tgz#544c6302e3aab80fa8959c67f9ed4a411a6f00b1"
+  integrity sha512-wafyQo5lqGABT+Lh7Od9/qULg7DG/kZFU3mLUKZFuiV/KATYlnv198yQxaZUZerhUDoTl/cZKu9t4mJa0rZK4Q==
+  dependencies:
+    reflect-metadata "0.1.13"
+
 "@decorators/express@^2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@decorators/express/-/express-2.5.0.tgz#51f88bebdcf2bea450e929282ea2d8da6e7c03e8"
@@ -1474,6 +1481,11 @@ redent@^1.0.0:
   dependencies:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
+
+reflect-metadata@0.1.13, reflect-metadata@^0.1.13:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.13.tgz#67ae3ca57c972a2aa1642b10fe363fe32d49dc08"
+  integrity sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==
 
 regexpp@^3.0.0, regexpp@^3.1.0:
   version "3.1.0"
