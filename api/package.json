@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start:dev": "tsnd --ignore-watch node_modules src/index.ts"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "typescript": "^4.2.4"
