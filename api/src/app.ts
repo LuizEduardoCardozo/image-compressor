@@ -1,10 +1,23 @@
-import express, { json } from 'express';
-import router from './router';
+import { Configuration, Inject, PlatformApplication } from '@tsed/common';
+import { json } from 'express';
 
-const app = express();
+const rootDir = __dirname;
 
-app.use(json());
+@Configuration({
+  rootDir,
+  acceptMimes: ['application/json'],
+  mount: {
+    '/': '${rootDir}/entity/**/*.controller.ts',
+  },
+})
+export default class Server {
+  @Inject()
+  app!: PlatformApplication;
 
-app.use('/api/v1/', router);
+  @Configuration()
+  settings!: Configuration;
 
-export default app;
+  public $beforeRoutesInit(): void | Promise<any> {
+    this.app.use(json());
+  }
+}
