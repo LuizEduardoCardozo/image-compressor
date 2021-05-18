@@ -1,14 +1,6 @@
-import 'reflect-metadata';
-import {
-  Controller,
-  Get,
-  Post,
-  Response as ResponseP,
-  Request as RequestP,
-} from '@decorators/express';
-import { Response, Request } from 'express';
+import { Controller, Get, PathParams, Post } from '@tsed/common';
 
-@Controller('/')
+@Controller('/file')
 export default class FileController {
   /*
     Uploads a new file to the server
@@ -16,9 +8,10 @@ export default class FileController {
     should send the file as multi-part form and the session
     in requisition header
   */
-  @Post('/files/')
-  create(@ResponseP() res: Response, @RequestP() req: Request): void {
-    res.send({ msg: 'POST', body: req.body });
+
+  @Post()
+  create(): void {
+    console.log('POST - olá, mundo');
   }
 
   /*
@@ -26,8 +19,9 @@ export default class FileController {
 
     should send the session in requisition header
   */
-  @Get('/files')
-  index(@ResponseP() res: Response): void {
-    res.send({ msg: 'GET' });
+  @Get('/:id')
+  index(@PathParams('id') id: string): string {
+    console.log('GET - olá, mundo');
+    return id;
   }
 }
