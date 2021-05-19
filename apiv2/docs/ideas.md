@@ -1,0 +1,1 @@
+- porque domain e app são separados?
